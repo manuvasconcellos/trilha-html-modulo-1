@@ -1,62 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>HTML na prática</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+    <!-- Header de Navegação -->
+    <header>
+        <h1 id="voltar">HTML explicado</h1>
+        <hr />
+        <p><small>Trabalho de HTML - Bootcamp</small></p>
+        <p><mark>Este documento é um resumo completo das principais tags estudadas.</mark></p>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução ao HTML</a></li>
+                <li><a href="#formulario">Formulários em HTML</a></li>
+                <li><a href="#formatacao">Formatações de texto</a></li>
+                <li><a href="#midia">Trabalhando com mídias</a></li>
+                <li><a href="#tabela">Tabelas em HTML</a></li>
+                <li><a href="#semantico">HTML Semântico</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <main>
+        <h2 id="introducao">Introdução ao HTML</h2>
+        <small><a href="#voltar">Voltar</a></small>
+        <p>
+            HTML é a linguagem de marcação para construção de páginas web. A sigla <abbr title="HyperText Markup Language">HTML</abbr> significa Linguagem de Marcação de Hipertexto.
+        </p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <h3>Exemplo de hierarquia de títulos:</h3>
+        <h1>Título H1</h1>
+        <h2>Título H2</h2>
+        <h3>Título H3</h3>
+        <h4>Título H4</h4>
+        <h5>Título H5</h5>
+        <h6>Título H6</h6>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <h3>Tags e Atributos</h3>
+        <p>
+            As tags HTML são envolvidas por sinais de menor e maior que: <code>&lt;tag&gt;</code>. Um exemplo é a tag <code>&lt;p&gt;</code>, que define um parágrafo.
+        </p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <p>
+            Um exemplo de texto com destaque é <strong>este aqui</strong>. Podemos também usar <i>itálico</i> ou <u>sublinhado</u> para dar ênfase visual.
+        </p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+        <p>
+            Veja um exemplo de marcação matemática: H<sub>2</sub>O (água) e x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>.
+        </p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+        <blockquote cite="https://developer.mozilla.org">
+            “HTML é a espinha dorsal da web moderna.” – MDN Web Docs
+        </blockquote>
+
+        <p>
+            Esta é uma frase com uma parte <del>removida</del> e depois corrigida com o conteúdo <mark>atualizado</mark>.
+        </p>
+
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li>Primeiro passo</li>
+            <li>Segundo passo</li>
+            <li>Terceiro passo</li>
+        </ol>
+
+        <h3>Lista não ordenada</h3>
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+
+        <h2 id="formulario">Formulários em HTML</h2>
+        <small><a href="#voltar">Voltar</a></small>
+        <p>
+            Um formulário começa com a tag <code>&lt;form&gt;</code> e pode conter campos como <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code> e botões.
+        </p>
+
+        <p>
+            Abaixo um exemplo fictício usando a antiga tag <font color="blue">font</font> (não recomendada em HTML5, mas usada aqui para fins de demonstração).
+        </p>
+
+        <h2 id="formatacao">Formatações de Texto</h2>
+        <small><a href="#voltar">Voltar</a></small>
+
+        <p>Exemplo de várias tags de formatação:</p>
+        <ul>
+            <li><b>Negrito (b)</b></li>
+            <li><strong>Negrito com significado (strong)</strong></li>
+            <li><i>Itálico (i)</i></li>
+            <li><em>Ênfase (em)</em></li>
+            <li><mark>Texto marcado</mark></li>
+            <li><small>Texto menor</small></li>
+            <li><u>Sublinhado</u></li>
+            <li><del>Texto riscado</del></li>
+            <li><sub>Texto subscrito</sub></li>
+            <li><sup>Texto sobrescrito</sup></li>
+        </ul>
+
+        <h2 id="midia">Trabalhando com mídias</h2>
+        <p>
+            Tags como <code>&lt;img&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code> e <code>&lt;iframe&gt;</code> permitem inserir diferentes tipos de mídia em uma página.
+        </p>
+
+        <h2 id="tabela">Tabelas em HTML</h2>
+        <p>
+            Para criar tabelas, usamos as tags <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code> e <code>&lt;th&gt;</code>. Elas ajudam a organizar dados tabulares.
+        </p>
+
+        <h2 id="semantico">HTML Semântico</h2>
+        <p>
+            HTML semântico usa tags como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;footer&gt;</code> para dar significado ao conteúdo.
+        </p>
+    </main>
+
+    <!-- Rodapé com referências -->
+    <footer>
+        <hr />
+        <h3>Referências</h3>
+        <ul>
+            <li>Material do Bootcamp</li>
+            <li>
+                <a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a>
+            </li>
+            <li>
+                <a href="https://www.alura.com.br/artigos/html5-o-que-e" target="_blank">Alura - O que é HTML5?</a>
+            </li>
+        </ul>
+        <p>&copy; 2025 - Projeto de HTML no Bootcamp</p>
+    </footer>
 
 </body>
 </html>
